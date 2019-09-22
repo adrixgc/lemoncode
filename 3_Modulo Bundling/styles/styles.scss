@@ -1,0 +1,25 @@
+
+$baseColor: black;
+$textColor: white;
+$textSize: 2rem;
+
+.box {
+    background-color: $baseColor;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    span.title {
+        margin-left: 20px;
+        text-align: center;
+        color: $textColor;
+        font-size: $textSize;
+    }
+
+    img.logo {
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
