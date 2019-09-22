@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+}
+  
+main {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+
+    .box {
+        flex-grow: 1;
+        box-sizing: border-box;
+        border: 1px solid gray;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh; 
+    }
+
+    .lemoncode {
+        display: none;
+    }
+}
