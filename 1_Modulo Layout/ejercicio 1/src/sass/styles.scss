@@ -1,0 +1,37 @@
+@import "mixins.scss";
+
+//Setting global color, easier to change if needed
+$globalColor: blue;
+
+.base-color {
+    background-color: $globalColor;
+}
+
+//This could be done with a for loop
+@include darkenColor($globalColor, 1);
+@include darkenColor($globalColor, 2);
+@include darkenColor($globalColor, 3);
+@include darkenColor($globalColor, 4);
+
+//This could be done with a for loop
+@include lightenColor($globalColor, 1);
+@include lightenColor($globalColor, 2);
+@include lightenColor($globalColor, 3);
+@include lightenColor($globalColor, 4);
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    width: 100%;
+
+    .item {
+        flex: 1;
+    }
+}
+
+.item {
+    display: inline-flex;
+    color: white;
+    align-items: center;
+}

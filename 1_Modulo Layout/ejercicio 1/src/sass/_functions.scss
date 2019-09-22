@@ -1,0 +1,9 @@
+@function darkenColor($color, $percentage){
+    @return darken($color, $percentage);
+}
+
+@function lightenColor($color, $percentage){
+    @return lighten($color, $percentage);
+}
+
+

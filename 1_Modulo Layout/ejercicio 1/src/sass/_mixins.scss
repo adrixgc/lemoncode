@@ -1,0 +1,13 @@
+@import "functions.scss";
+
+@mixin darkenColor($color, $divPosition) {
+    .darken-#{$divPosition} {
+        background-color: darkenColor($color, $divPosition*10);
+    }
+}
+
+@mixin lightenColor($color, $divPosition) {
+    .lighten-#{$divPosition} {
+        background-color: lightenColor($color, $divPosition*10);
+    }
+}
