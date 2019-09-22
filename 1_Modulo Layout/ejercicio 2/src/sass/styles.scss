@@ -1,0 +1,52 @@
+@import "themeA.scss";
+//@import "themeB.scss";
+
+.main-container {
+    margin-left: 100px;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    border: $border;
+    border-radius: $borderRadius;
+    text-align: center;
+}
+
+.margins {
+    margin: 20px 0px  20px 0px;
+}
+
+.font {
+    font-size: 1.2rem;
+}
+
+.primary-font {
+    font-family: $principalFont;
+}
+
+.secondary-font {
+    font-family: $secondaryFont;
+}
+
+.font-style {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.base {
+    background-color: $baseColor;
+}
+
+.important {
+    background-color: $importantColor;
+}
+
+.warning {
+    background-color: $warningColor;
+}
+
+.shadow { 
+    box-shadow: $shadow;
+}
