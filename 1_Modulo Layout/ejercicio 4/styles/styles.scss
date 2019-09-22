@@ -1,0 +1,77 @@
+@import "layout";
+
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content-a {
+    grid-area: content-a;
+    background-color: yellow;
+}
+
+.content-b {
+    grid-area: content-b;
+    background-color: blue;
+}
+
+.link-tricks {
+    grid-area: link-tricks;
+    background-color: pink;
+    text-align: center;
+}
+
+.link-w3c {
+    grid-area: link-w3c;
+    background-color: pink;
+    text-align: center;
+}
+
+.link-jss {
+    grid-area: link-jss;
+    background-color: pink;
+    text-align: center;
+}
+
+@media screen and (min-width : 1200px) {
+    body {
+        width: 90%;
+    }
+
+    .main-container {
+        @include full-res;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width : 1199px) and (min-width: 992px){
+
+    body {
+        width: 95%;
+    }
+
+    .main-container {
+        @include large-res;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width : 991px) and (min-width: 768px) {
+    .main-container {
+        @include medium-res;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-container {
+        @include small-res;
+    }
+}

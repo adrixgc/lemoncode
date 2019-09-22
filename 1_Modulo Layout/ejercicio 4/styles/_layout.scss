@@ -1,0 +1,42 @@
+@mixin full-res {
+    display: grid;
+    grid-template-areas: 
+        "link-tricks content-a content-a"
+        "link-w3c content-b content-b"
+        "link-jss content-b content-b" ;
+    grid-template-rows: 25vh 25vh 25vh;
+}
+
+@mixin large-res {
+    display: grid;
+    grid-template-areas: 
+    "link-tricks content-a content-a"
+    "link-w3c content-b content-b"
+    "link-jss content-b content-b" ;
+    grid-template-rows: 25vh 25vh 25vh;
+}
+
+@mixin medium-res {
+    display: grid;
+    grid-template-areas: 
+        "link-tricks link-w3c link-jss"
+        "content-a content-a content-a"
+        "content-b content-b content-b";
+    grid-template-rows: 30vh 35vh 35vh;
+}
+
+@mixin small-res {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .content-a, .content-b {
+        flex-grow: 1;
+    }   
+
+    .link-tricks, .link-w3c, .link-jss {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 0;
+    }
+}
